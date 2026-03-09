@@ -1,0 +1,7 @@
+@import './Students.css';
+
+th {
+    background: #1e8449;
+}
+
+/* green header for Courses table */

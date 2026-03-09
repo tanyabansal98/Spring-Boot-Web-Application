@@ -1,0 +1,259 @@
+/* ── Shared table + card styles used by all pages ── */
+
+.page {
+    padding: 24px 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page h2 {
+    margin-bottom: 16px;
+    color: #1e3a5f;
+}
+
+/* Messages */
+.msg {
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.msg.error {
+    background: #fdecea;
+    color: #c0392b;
+}
+
+.msg.success {
+    background: #eafaf1;
+    color: #1e8449;
+}
+
+/* Card container */
+.card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Inline grid form (Add row) */
+.grid-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.grid-form input,
+.grid-form select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    flex: 1 1 140px;
+}
+
+/* Stacked form (Edit page) */
+.stack-form {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 10px 14px;
+    align-items: center;
+}
+
+.stack-form label {
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+.stack-form input,
+.stack-form select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background: #2d5491;
+}
+
+.btn-secondary {
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background: #c8c8c8;
+}
+
+.btn-green {
+    background: #1e8449;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-green:hover {
+    background: #27ae60;
+}
+
+.btn-purple {
+    background: #8e44ad;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-purple:hover {
+    background: #71368a;
+}
+
+.btn-edit {
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-edit:hover {
+    background: #d35400;
+}
+
+.btn-enroll {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-enroll:hover {
+    background: #1a6da0;
+}
+
+.btn-delete {
+    background: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-delete:hover {
+    background: #a93226;
+}
+
+/* Actions cell */
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+/* Status badges */
+.badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.active {
+    background: #d5f5e3;
+    color: #1e8449;
+}
+
+.badge.inactive {
+    background: #fadbd8;
+    color: #c0392b;
+}
+
+.badge.graduated {
+    background: #d6eaf8;
+    color: #1a5276;
+}
+
+/* Empty state */
+.empty {
+    color: #999;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+th,
+td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+th {
+    background: #1e3a5f;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: #f8f9fc;
+}

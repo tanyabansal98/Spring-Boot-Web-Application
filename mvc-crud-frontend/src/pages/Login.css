@@ -1,0 +1,150 @@
+/* ═══════════════════════════════════
+   Login / Register Page Styles
+   ═══════════════════════════════════ */
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Header ── */
+.login-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.login-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login-header h2 {
+    font-size: 24px;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+.login-subtitle {
+    color: #888;
+    font-size: 14px;
+}
+
+/* ── Error ── */
+.login-error {
+    background: #fff0f0;
+    border: 1px solid #ffcdd2;
+    color: #c62828;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+/* ── Form ── */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.form-group input::placeholder {
+    color: #bbb;
+}
+
+/* ── Button ── */
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.2s;
+    margin-top: 4px;
+}
+
+.btn-login:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.35);
+}
+
+.btn-login:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* ── Toggle (switch between login/register) ── */
+.login-toggle {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #666;
+}
+
+.btn-toggle {
+    background: none;
+    border: none;
+    color: #667eea;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 4px;
+    text-decoration: underline;
+}
+
+.btn-toggle:hover {
+    color: #764ba2;
+}

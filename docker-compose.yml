@@ -1,0 +1,36 @@
+
+
+services:
+  auth-service:
+    build:
+      context: ./auth-service
+    ports:
+      - "8084:8083"
+    networks:
+      - app-network
+    container_name: auth-service
+
+  mvc-crud-backend:
+    build:
+      context: ./mvc-crud
+    ports:
+      - "8085:8082"
+    networks:
+      - app-network
+    container_name: mvc-crud-backend
+
+  mvc-crud-frontend:
+    build:
+      context: ./mvc-crud-frontend
+    ports:
+      - "5175:80"  # Expose Nginx port 80 to host port 5175
+    networks:
+      - app-network
+    depends_on:
+      - auth-service
+      - mvc-crud-backend
+    container_name: mvc-crud-frontend
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,44 @@
+@import './Students.css';
+
+/* Student card on enrollments page */
+.student-card {
+    background: #f3eafc;
+    border: 1px solid #d7bde2;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.student-card h2 {
+    margin: 0 0 8px;
+    color: #6c3483;
+}
+
+.student-card p {
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    color: #555;
+    flex-wrap: wrap;
+}
+
+th {
+    background: #6c3483;
+}
+
+/* purple header for Enrollments table */
+
+/* Inline enroll form */
+.inline-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.inline-form select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 260px;
+    font-size: 14px;
+}
